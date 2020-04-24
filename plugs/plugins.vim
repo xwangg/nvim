@@ -15,20 +15,20 @@ if dein#load_state('~/.config/nvim/dein')
   call dein#add('junegunn/fzf')
   " Language support
   call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
-  " All the Themes
+  " All the Themes I like
   call dein#add('joshdick/onedark.vim')
+  call dein#add('drewtempelmeyer/palenight.vim')
+
   call dein#add('HerringtonDarkholme/yats.vim')
   " key menu popup "
   call dein#add('liuchengxu/vim-which-key')
-  "  Neoterm
-  call dein#add('kassio/neoterm')
   " Running tests in vim "
   call dein#add('janko-m/vim-test')
   " Better Syntax Support
   call dein#add('sheerun/vim-polyglot')
   " Powerline
   call dein#add('vim-airline/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('christianchiarulli/vim-airline-themes')
   " File explorer
   call dein#add('scrooloose/NERDTree')
   " Comments "
