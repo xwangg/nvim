@@ -192,6 +192,13 @@ gls.left[12] = {
     highlight = {colors.blue,colors.bg},
   }
 }
+gls.left[13] = {
+  DiagnosticInfo = {
+    provider = 'DiagnosticInfo',
+    icon = '   ',
+    highlight = {colors.orange,colors.bg},
+  }
+}
 gls.right[1]= {
   FileFormat = {
     provider = 'FileFormat',
@@ -249,3 +256,16 @@ gls.short_line_left[1] = {
 --     highlight = {colors.grey,colors.purple}
 --   }
 -- }
+-- function! s:my_bookmark_color() abort
+--   let s:scl_guibg = matchstr(execute('hi SignColumn'), 'guibg=\zs\S*')
+--   if empty(s:scl_guibg)
+--     let s:scl_guibg = 'NONE'
+--   endif
+--   exe 'hi MyBookmarkSign guifg=' . s:scl_guibg
+-- endfunction
+-- call s:my_bookmark_color() " don't remove this line!
+
+-- augroup UserGitSignColumnColor
+--   autocmd!
+--   autocmd ColorScheme * call s:my_bookmark_color()
+-- augroup END

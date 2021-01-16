@@ -17,9 +17,7 @@ bash <(curl -s https://raw.githubusercontent.com/ChristianChiarulli/nvim/master/
 - Mac
 
   ```
-  brew install neovim
-
-  brew install --HEAD neovim # Latest
+  brew install --HEAD neovim # Nightly version
 
   brew upgrade neovim --fetch-HEAD # Sometimes you need to update
   ```
@@ -27,13 +25,17 @@ bash <(curl -s https://raw.githubusercontent.com/ChristianChiarulli/nvim/master/
 - Ubuntu
 
   ```
-  sudo apt install neovim # This may not provide the newest version
+  curl -l https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage > /tmp/nvim.appimage
+
+  sudo mv /tmp/nvim.appimage /usr/local/bin/nvim
+
+  chmod +x /usr/local/bin/nvim
   ```
 
 - Arch
 
   ```
-  yay -S neovim-nightly-git # Latest
+  yay -S neovim-git # Latest
   ```
 
 ## Clone this repo into your config
@@ -185,15 +187,12 @@ Along with some of my config files you can find in `utils/vscode_config`
 ## TODO
 
 - Better Documentation
-- Improve VSCode which-key config
 
 ## CoC extensions to check out
 
-- coc-fzf
-- coc-stylelintplus
+- coc-fzf-preview
+  - https://github.com/yuki-ycino/fzf-preview.vim/
 - coc-floaterm
-- coc-actions
-- coc-bookmark
 
 ## 0.5
 
@@ -207,12 +206,13 @@ If anyone reading this has any suggestions about implementing any of the followi
 - ale
 - multiple cursors
 - markdown table
-- spaceline (add colorscheme for mach2)
+- galaxyline automatically grab colors from colorscheme
 - tpope/vim-dadbod
 - neovide
 - People asked about vimwiki I kinda hate it but maybe I'll add it
 - vimspector this is included but I don't plan on using it much
   - can be used with jdb, pdb, gdb, etc...
+- nvim-dap and nvim-dap-virtual-text (ALL DEBUGGING IN NEOVIM IS CONFUSING AND HARD TO GET WORKING OR I'M JUST DUMB)
 - later manually link pylance
 - resize with arrows in addition to meta
 - how to support meta key on for macOS?
