@@ -10,7 +10,6 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-stylelintplus',
   \ 'coc-emoji',
-  \ 'coc-bookmark',
   \ 'coc-yaml',
   \ 'coc-pyright',
   \ 'coc-explorer',
@@ -21,6 +20,7 @@ let g:coc_global_extensions = [
   \ 'coc-marketplace',
   \ 'coc-clangd',
   \ ]
+  " \ 'coc-bookmark',
   " \ 'coc-java',
   " \ 'coc-java-debug',
   " \ 'coc-emmet',
